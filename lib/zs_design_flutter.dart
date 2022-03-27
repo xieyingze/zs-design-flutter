@@ -9,12 +9,12 @@ library zs_design;
 
 /// 基础组件
 export './src/basic/button.dart';
-export './src/basic/button.dart';
 export './src/basic/expandlabel.dart';
 export './src/basic/icon.dart';
 export './src/basic/label.dart';
 export './src/basic/progressCircular.dart';
 export './src/basic/progressLine.dart';
+export './src/basic/image.dart';
 
 /// 样式
 export './src/constant/colors.dart';
@@ -36,6 +36,7 @@ export './src/feedback/toast/index.dart';
 
 /// 表单组件
 export './src/form/textfiled.dart';
+export './src/form/rate.dart';
 
 /// lib
 export './src/lib/easyloading/index.dart';

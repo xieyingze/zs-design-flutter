@@ -160,7 +160,7 @@ class ZSImage extends StatelessWidget {
       case ZSImagePlaceholder.avatar:
         return OctoPlaceholder.circleAvatar(
           backgroundColor: ZSColors.main(),
-          text: SMLabel(
+          text: ZSLabel(
             text: avatarText ?? 'JX',
             color: ZSColors.white(),
           ),

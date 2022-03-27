@@ -33,7 +33,7 @@ class ZSModal {
                     Container(
                       height: 50,
                       alignment: Alignment.center,
-                      child: SMLabel(
+                      child: ZSLabel(
                         text: title,
                         color: ZSColors.fontMain(),
                         fontSize: fontSize16,
@@ -58,7 +58,7 @@ class ZSModal {
                       alignment: Alignment.center,
                       width: double.infinity,
                       height: 50,
-                      child: SMLabel(
+                      child: ZSLabel(
                         color: ZSColors.fontMain(),
                         text: items[index],
                       ),
@@ -79,7 +79,7 @@ class ZSModal {
                       child: Container(
                         height: 50,
                         alignment: Alignment.center,
-                        child: SMLabel(
+                        child: ZSLabel(
                           text: cancel,
                           color: ZSColors.fontNormal(),
                         ),

@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="474f239a-da8e-41c3-b912-ca5446f9c502" name="Default Changelist" comment="" />
+    <list default="true" id="474f239a-da8e-41c3-b912-ca5446f9c502" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/basic/button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/basic/button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/basic/image.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/basic/image.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/basic/label.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/basic/label.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/zs_design_flutter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/zs_design_flutter.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="26sfxEWFU4d79YHcvWOUdFCN1Y6" />
   <component name="ProjectViewState">

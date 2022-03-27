@@ -7,7 +7,7 @@ export 'package:ionicons/ionicons.dart';
 /// ```
 ///
 /// 相关文本组件如下:
-///  * [SMLabel], 基础的文本组件
+///  * [ZSLabel], 基础的文本组件
 ///
 ///
 class ZSIcon extends StatelessWidget {

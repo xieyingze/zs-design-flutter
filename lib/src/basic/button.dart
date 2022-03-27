@@ -130,7 +130,7 @@ class _ZSButtonState extends State<ZSButton> {
                     ),
                   ),
                   widget.loadingText != null
-                      ? SMLabel(
+                      ? ZSLabel(
                           margin: EdgeInsets.only(left: 8),
                           text: widget.loadingText ?? '',
                           color: _getLoadingColor(type: type),
@@ -151,7 +151,7 @@ class _ZSButtonState extends State<ZSButton> {
                           ),
                         )
                       : Container(),
-                  SMLabel(
+                  ZSLabel(
                     text: widget.title ?? '',
                     color: _getTextColor(type: type).withAlpha(enableAlpha),
                     fontSize: widget.fontSize ?? 16,
@@ -191,7 +191,7 @@ class _ZSButtonState extends State<ZSButton> {
                     ),
                   ),
                   widget.loadingText != null
-                      ? SMLabel(
+                      ? ZSLabel(
                           margin: EdgeInsets.only(left: 8),
                           text: widget.loadingText ?? '',
                           color: _getLoadingColor(type: type),
@@ -212,7 +212,7 @@ class _ZSButtonState extends State<ZSButton> {
                           ),
                         )
                       : Container(),
-                  SMLabel(
+                  ZSLabel(
                     text: widget.title ?? '',
                     color: _getTextColor(type: type).withAlpha(enableAlpha),
                     fontSize: widget.fontSize ?? 16,

@@ -24,6 +24,30 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  # 响应式布局 (ANDROID IOS LINUX MACOS WINDOWS)
+  responsive_framework: ^0.1.5
+
+  # getX 状态管理+路由管理 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  get: 4.3.8
+
+  # 日志打印 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  logger: ^1.1.0
+
+  # http (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  dio: ^4.0.4
+
+  # EventBus (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  event_bus: ^2.0.0
+
+  # 图表 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  syncfusion_flutter_charts: ^19.3.53
+
+  # 分组列表 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  cupertino_listview: ^2.0.0
+
+  # 元组 (ANDROID IOS LINUX MACOS WEB WINDOWS)
+  tuple: ^2.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

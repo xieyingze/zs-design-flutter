@@ -42,7 +42,7 @@ enum ZSLabelFontType {
   numBold,
 }
 
-class SMLabel extends StatelessWidget {
+class ZSLabel extends StatelessWidget {
   /// 文字属性
   /// 文字
   final String text;
@@ -96,7 +96,7 @@ class SMLabel extends StatelessWidget {
   /*
    * 外部接口
    */
-  const SMLabel({
+  const ZSLabel({
     required this.text,
     this.color,
     this.backgroundColor,

@@ -31,7 +31,7 @@ class ZSDialog {
           Column(
             children: [
               title != null
-                  ? SMLabel(
+                  ? ZSLabel(
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       text: title,
                       fontSize: fontSize16,
@@ -39,7 +39,7 @@ class ZSDialog {
                       fontWeight: FontWeight.w500,
                     )
                   : Container(),
-              SMLabel(
+              ZSLabel(
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 margin: EdgeInsets.only(top: 16),
                 maxLines: 3,
@@ -63,7 +63,7 @@ class ZSDialog {
                             width: itemW - 0.5,
                             height: 50,
                             alignment: Alignment.center,
-                            child: SMLabel(
+                            child: ZSLabel(
                               text: '取消',
                               fontSize: fontSize16,
                             ),
@@ -83,7 +83,7 @@ class ZSDialog {
                             width: itemW,
                             height: 50,
                             alignment: Alignment.center,
-                            child: SMLabel(
+                            child: ZSLabel(
                               text: '确认',
                               color: ZSColors.main(),
                               fontSize: fontSize16,
@@ -106,7 +106,7 @@ class ZSDialog {
                         width: itemW * 2,
                         height: 50,
                         alignment: Alignment.center,
-                        child: SMLabel(
+                        child: ZSLabel(
                           text: confirm ?? '确认',
                           color: ZSColors.main(),
                           fontSize: fontSize16,
