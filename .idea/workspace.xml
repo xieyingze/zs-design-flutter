@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="474f239a-da8e-41c3-b912-ca5446f9c502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/common/config/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/common/config/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/pages/mobile/me/me/controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/pages/mobile/me/me/controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/pages/mobile/me/me/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/pages/mobile/me/me/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/basic/button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/basic/button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/basic/image.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/basic/image.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/basic/label.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/basic/label.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/zs_design_flutter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/zs_design_flutter.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,7 @@
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -53,5 +51,36 @@
       <screen x="0" y="25" width="2560" height="1367" />
     </state>
     <state x="1188" y="401" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.2560.1367@0.25.2560.1367" timestamp="1648217700336" />
+    <state width="478" height="592" key="DebuggerActiveHint" timestamp="1648396291486">
+      <screen x="0" y="25" width="2560" height="1367" />
+    </state>
+    <state width="478" height="592" key="DebuggerActiveHint/0.25.2560.1367@0.25.2560.1367" timestamp="1648396291486" />
+    <state width="2032" height="31" key="GridCell.Tab.0.bottom" timestamp="1648396029554">
+      <screen x="0" y="25" width="2560" height="1367" />
+    </state>
+    <state width="2032" height="31" key="GridCell.Tab.0.bottom/0.25.2560.1367@0.25.2560.1367" timestamp="1648396029554" />
+    <state width="2032" height="31" key="GridCell.Tab.0.center" timestamp="1648396029554">
+      <screen x="0" y="25" width="2560" height="1367" />
+    </state>
+    <state width="2032" height="31" key="GridCell.Tab.0.center/0.25.2560.1367@0.25.2560.1367" timestamp="1648396029554" />
+    <state width="2032" height="31" key="GridCell.Tab.0.left" timestamp="1648396029553">
+      <screen x="0" y="25" width="2560" height="1367" />
+    </state>
+    <state width="2032" height="31" key="GridCell.Tab.0.left/0.25.2560.1367@0.25.2560.1367" timestamp="1648396029553" />
+    <state width="2032" height="31" key="GridCell.Tab.0.right" timestamp="1648396029554">
+      <screen x="0" y="25" width="2560" height="1367" />
+    </state>
+    <state width="2032" height="31" key="GridCell.Tab.0.right/0.25.2560.1367@0.25.2560.1367" timestamp="1648396029554" />
+    <state x="1140" y="330" width="751" height="756" key="find.popup" timestamp="1648379918407">
+      <screen x="0" y="25" width="2560" height="1367" />
+    </state>
+    <state x="1140" y="330" width="751" height="756" key="find.popup/0.25.2560.1367@0.25.2560.1367" timestamp="1648379918407" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint suspend="THREAD" type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

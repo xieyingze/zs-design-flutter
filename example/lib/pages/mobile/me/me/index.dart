@@ -13,10 +13,25 @@ class MBMePage extends StatelessWidget {
     return BaseScaffold(
       backgroundColor: ZSColors.background(),
       title: '我的',
-      child: Center(
-        child: ZSLabel(
-          text: '这是我的',
-        ),
+      child: ZSLayout(
+        padding: EdgeInsets.all(16),
+        type: ZSLayoutType.column,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Obx(
+            () => ZSLabel(
+              text: controller.result.value,
+              fontSize: fontSize16,
+            ),
+          ),
+          ZSButton(
+            margin: EdgeInsets.only(top: 20),
+            size: Size(120, 44),
+            title: '点击计算',
+            onTap: () => controller.onSum(),
+          ),
+        ],
       ),
     );
   }

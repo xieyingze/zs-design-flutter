@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart' as Foundation;
 import 'package:flutter/material.dart';
+import 'package:worker_manager/worker_manager.dart';
 import 'package:zs_design_flutter/zs_design_flutter.dart';
 import 'package:zs_design_flutter_example/common/manager/http/index.dart';
 import 'package:zs_design_flutter_example/library/debug/plugin/index.dart';
@@ -61,6 +62,8 @@ class Config {
   void initMyApp({required Widget app}) async {
     // 设置错误页面
     setCustomErrorPage();
+
+    await Executor().warmUp(log: true);
 
     SMPluginManager.instance
       ..register(

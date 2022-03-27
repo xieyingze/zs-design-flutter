@@ -48,6 +48,9 @@ dependencies:
   # 元组 (ANDROID IOS LINUX MACOS WEB WINDOWS)
   tuple: ^2.0.0
 
+
+  worker_manager: any
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
