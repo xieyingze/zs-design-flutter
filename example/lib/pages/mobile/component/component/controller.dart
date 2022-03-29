@@ -18,6 +18,7 @@ import 'package:zs_design_flutter_example/pages/mobile/component/feedback_loadin
 import 'package:zs_design_flutter_example/pages/mobile/component/feedback_modal/index.dart';
 import 'package:zs_design_flutter_example/pages/mobile/component/feedback_notify/index.dart';
 import 'package:zs_design_flutter_example/pages/mobile/component/feedback_toast/index.dart';
+import 'package:zs_design_flutter_example/pages/mobile/component/form_picker/index.dart';
 import 'package:zs_design_flutter_example/pages/mobile/component/form_rate/index.dart';
 import 'package:zs_design_flutter_example/pages/mobile/component/form_textfield/index.dart';
 
@@ -115,6 +116,7 @@ class MBComponentController extends GetxController {
         break;
       case 2:
         if (row == 0) Get.to(MBTextFieldPage());
+        if (row == 1) Get.to(MBPickerPage());
         if (row == 2) Get.to(MBRatePage());
         break;
       case 3:

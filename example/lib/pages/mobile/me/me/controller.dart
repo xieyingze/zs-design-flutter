@@ -38,9 +38,7 @@ class MBMeController extends BaseController {
     // num val = await compute(summ, 10000000000);
     // result.value = 'sum = $val';
 
-    final task = Executor().execute(arg1: 1000000000, fun1: summ);
-    final val = await task.next();
-    result.value = 'sum = $val';
+    final task = Executor().execute(arg1: 1000000, fun1: summ);
     logger.v('---------');
     task.cancel();
   }

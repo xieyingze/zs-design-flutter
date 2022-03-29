@@ -37,6 +37,7 @@ export './src/feedback/toast/index.dart';
 /// 表单组件
 export './src/form/textfiled.dart';
 export './src/form/rate.dart';
+export 'src/form/picker/index.dart';
 
 /// lib
 export './src/lib/easyloading/index.dart';

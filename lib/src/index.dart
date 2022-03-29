@@ -20,6 +20,10 @@ export './constant/styles.dart';
 export './container/container.dart';
 export './container/layout.dart';
 
+/// 表单组件
+export './form/textfiled.dart';
+export './form/picker/index.dart';
+
 /// 反馈组件
 export './feedback/dialog/index.dart';
 export './feedback/loading/index.dart';
