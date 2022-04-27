@@ -31,21 +31,21 @@ abstract class PickerAdapter<T> {
                     color: Colors.black87,
                     fontFamily: picker?.state?.context != null
                         ? Theme.of(picker!.state!.context)
-                        .textTheme
-                        .headline6!
-                        .fontFamily
+                            .textTheme
+                            .headline6!
+                            .fontFamily
                         : "",
                     fontSize: ZSPicker.DefaultTextSize),
             child: child != null
                 ? (isSel && picker!.selectedIconTheme != null
-                ? IconTheme(
-              data: picker!.selectedIconTheme!,
-              child: child,
-            )
-                : child)
+                    ? IconTheme(
+                        data: picker!.selectedIconTheme!,
+                        child: child,
+                      )
+                    : child)
                 : Text(text ?? "",
-                textScaleFactor: picker!.textScaleFactor,
-                style: (isSel ? picker!.selectedTextStyle : null))));
+                    textScaleFactor: picker!.textScaleFactor,
+                    style: (isSel ? picker!.selectedTextStyle : null))));
   }
 
   Widget makeTextEx(
@@ -75,7 +75,9 @@ abstract class PickerAdapter<T> {
             TextStyle(color: _txtColor, fontSize: _txtSize),
         child: Wrap(
           children: items,
-        ),),);
+        ),
+      ),
+    );
   }
 
   String getText() {
@@ -253,13 +255,13 @@ class PickerDataAdapter<T> extends PickerAdapter<T> {
     if (item.text != null) {
       return isSel && picker!.selectedTextStyle != null
           ? DefaultTextStyle(
-          style: picker!.selectedTextStyle!,
-          child: picker!.selectedIconTheme != null
-              ? IconTheme(
-            data: picker!.selectedIconTheme!,
-            child: item.text!,
-          )
-              : item.text!)
+              style: picker!.selectedTextStyle!,
+              child: picker!.selectedIconTheme != null
+                  ? IconTheme(
+                      data: picker!.selectedIconTheme!,
+                      child: item.text!,
+                    )
+                  : item.text!)
           : item.text!;
     }
     return makeText(
@@ -528,9 +530,9 @@ class DateTimePickerAdapter extends PickerAdapter<DateTime> {
     this.customColumnType,
     this.twoDigitYear = false,
   }) : assert(minuteInterval == null ||
-      (minuteInterval >= 1 &&
-          minuteInterval <= 30 &&
-          (60 % minuteInterval == 0))) {
+            (minuteInterval >= 1 &&
+                minuteInterval <= 30 &&
+                (60 % minuteInterval == 0))) {
     super.picker = picker;
     _yearBegin = yearBegin ?? 0;
     if (minValue != null && minValue!.year > _yearBegin) {
@@ -664,25 +666,25 @@ class DateTimePickerAdapter extends PickerAdapter<DateTime> {
             _min = minHour == null
                 ? 1
                 : minHour! >= 12
-                ? 12
-                : minHour! + 1;
+                    ? 12
+                    : minHour! + 1;
             _max = maxHour == null
                 ? 12
                 : maxHour! >= 12
-                ? 12
-                : maxHour! + 1;
+                    ? 12
+                    : maxHour! + 1;
           } else {
             // pm
             _min = minHour == null
                 ? 1
                 : minHour! >= 12
-                ? 24 - minHour! - 12
-                : 1;
+                    ? 24 - minHour! - 12
+                    : 1;
             _max = maxHour == null
                 ? 12
                 : maxHour! >= 12
-                ? maxHour! - 12
-                : 1;
+                    ? maxHour! - 12
+                    : 1;
           }
           return _max > _min ? _max - _min + 1 : _min - _max + 1;
         }
@@ -740,7 +742,7 @@ class DateTimePickerAdapter extends PickerAdapter<DateTime> {
           _text = "${_yearBegin + index}";
           var _l = _text.length;
           _text =
-          "${_text.substring(_l - (_l - 2), _l)}${_checkStr(yearSuffix)}";
+              "${_text.substring(_l - (_l - 2), _l)}${_checkStr(yearSuffix)}";
         } else
           _text = "${_yearBegin + index}${_checkStr(yearSuffix)}";
         break;
@@ -751,8 +753,7 @@ class DateTimePickerAdapter extends PickerAdapter<DateTime> {
           if (months != null)
             _text = "${months![index]}";
           else {
-            List _months =
-            [
+            List _months = [
               "Jan",
               "Feb",
               "Mar",
@@ -784,7 +785,7 @@ class DateTimePickerAdapter extends PickerAdapter<DateTime> {
           _text = "${intToStr(index)}${_checkStr(minuteSuffix)}";
         else
           _text =
-          "${intToStr(index * minuteInterval!)}${_checkStr(minuteSuffix)}";
+              "${intToStr(index * minuteInterval!)}${_checkStr(minuteSuffix)}";
         break;
       case 6:
         List? _ampm = strAMPM ?? ['AM', 'PM'];
@@ -793,7 +794,7 @@ class DateTimePickerAdapter extends PickerAdapter<DateTime> {
         break;
       case 7:
         _text =
-        "${intToStr(index + (minHour == null ? 0 : (picker!.selecteds[_colAP] == 0 ? minHour! : 0)) + 1)}";
+            "${intToStr(index + (minHour == null ? 0 : (picker!.selecteds[_colAP] == 0 ? minHour! : 0)) + 1)}";
         break;
     }
 
@@ -868,8 +869,8 @@ class DateTimePickerAdapter extends PickerAdapter<DateTime> {
           picker!.selecteds[i] = value!.hour == 0
               ? 11
               : (value!.hour > 12)
-              ? value!.hour - 12 - 1
-              : value!.hour - 1;
+                  ? value!.hour - 12 - 1
+                  : value!.hour - 1;
           break;
       }
     }

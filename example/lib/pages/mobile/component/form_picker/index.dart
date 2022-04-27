@@ -8,8 +8,8 @@ import 'package:zs_design_flutter_example/common/section/index.dart';
 import 'package:zs_design_flutter_example/common/utils/alert.dart';
 import 'package:zs_design_flutter_example/common/utils/clipboard.dart';
 import 'package:zs_design_flutter_example/components/button/navbar_button.dart';
+
 import 'controller.dart';
-import 'package:zs_design_flutter/zs_design_flutter.dart';
 
 class MBPickerPage extends GetView<MBPickerController> {
   const MBPickerPage({Key? key}) : super(key: key);
@@ -58,11 +58,12 @@ class MBPickerPage extends GetView<MBPickerController> {
   void _showPicker() {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
     ZSPicker picker = ZSPicker(
-        adapter: PickerDataAdapter<String>(
-            pickerdata: JsonDecoder().convert(controller.pickerData)),
+        adapter: PickerDataAdapter<String>(pickerdata: JsonDecoder().convert(controller.pickerData)),
         changeToFirst: false,
         textAlign: TextAlign.left,
-        textStyle: TextStyle(color: Colors.blue,),
+        textStyle: TextStyle(
+          color: Colors.blue,
+        ),
         selectedTextStyle: TextStyle(color: Colors.red),
         columnPadding: const EdgeInsets.all(8.0),
         onConfirm: (ZSPicker picker, List value) {
@@ -71,7 +72,6 @@ class MBPickerPage extends GetView<MBPickerController> {
         });
     picker.show(Get.context!);
   }
-
 
   Widget _buildDemo2() {
     return Column(
@@ -111,29 +111,36 @@ class MBPickerPage extends GetView<MBPickerController> {
   */
   void _showPicker2() {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
-    ZSPicker pi = ZSPicker(adapter: PickerDataAdapter<String>(
-        pickerdata: JsonDecoder().convert(controller.pickerData)),
+    ZSPicker pi = ZSPicker(
+        adapter: PickerDataAdapter<String>(pickerdata: JsonDecoder().convert(controller.pickerData)),
         changeToFirst: false,
         textAlign: TextAlign.left,
-        textStyle: TextStyle(color: ZSColors.fontMain(),),
+        textStyle: TextStyle(
+          color: ZSColors.fontMain(),
+        ),
         selectedTextStyle: TextStyle(color: ZSColors.fontMain()),
         columnPadding: const EdgeInsets.all(8.0),
         onConfirm: (ZSPicker picker, List value) {
           print(value.toString());
           print(picker.getSelectedValues());
         });
-    ZSPicker picker = ZSPicker(
-        adapter: PickerDataAdapter<String>(
-            pickerdata: JsonDecoder().convert(controller.pickerData)),
-        changeToFirst: false,
-        textStyle: TextStyle(color: ZSColors.fontMain(),),
-        selectedTextStyle: TextStyle(color: ZSColors.fontMain(), fontWeight: FontWeight.bold, fontSize: fontSize18,),
-        columnPadding: const EdgeInsets.all(8.0),
-        onConfirm: (ZSPicker picker, List value) {
-          print(value.toString());
-          print(picker.getSelectedValues());
-        });
-    picker.showModal(Get.context!);
+    // ZSPicker picker = ZSPicker(
+    //     adapter: PickerDataAdapter<String>(pickerdata: JsonDecoder().convert(controller.pickerData)),
+    //     changeToFirst: false,
+    //     textStyle: TextStyle(
+    //       color: ZSColors.fontMain(),
+    //     ),
+    //     selectedTextStyle: TextStyle(
+    //       color: ZSColors.fontMain(),
+    //       fontWeight: FontWeight.bold,
+    //       fontSize: fontSize18,
+    //     ),
+    //     columnPadding: const EdgeInsets.all(8.0),
+    //     onConfirm: (ZSPicker picker, List value) {
+    //       print(value.toString());
+    //       print(picker.getSelectedValues());
+    //     });
+    pi.showModal(Get.context!);
     // picker.show(Get.context!);
   }
 

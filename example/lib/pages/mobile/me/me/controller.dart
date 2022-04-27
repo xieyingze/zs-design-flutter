@@ -1,11 +1,7 @@
-import 'dart:io';
-import 'dart:isolate';
-
-import 'package:flutter/foundation.dart';
+import 'package:get/get.dart';
 import 'package:worker_manager/worker_manager.dart';
 import 'package:zs_design_flutter_example/common/constant/images.dart';
 import 'package:zs_design_flutter_example/common/index.dart';
-import 'package:get/get.dart';
 import 'package:zs_design_flutter_example/main.dart';
 
 class MBMeController extends BaseController {
@@ -17,6 +13,7 @@ class MBMeController extends BaseController {
     [
       {'icon': KImage.meClear, 'title': '清除缓存'},
       {'icon': KImage.meAgreement, 'title': '用户协议'},
+      {'icon': KImage.mePrivate, 'title': '隐私政策'},
       {'icon': KImage.mePrivate, 'title': '隐私政策'}
     ],
     [
@@ -38,7 +35,7 @@ class MBMeController extends BaseController {
     // num val = await compute(summ, 10000000000);
     // result.value = 'sum = $val';
 
-    final task = Executor().execute(arg1: 1000000, fun1: summ);
+    final task = Executor().execute(arg1: 1000000, fun1: sum);
     logger.v('---------');
     task.cancel();
   }
@@ -82,7 +79,7 @@ class MBMeController extends BaseController {
   // }
 
   //计算0到 num 数值的总和
-  num summ(int num) {
+  num sum(int num) {
     int count = 0;
     while (num > 0) {
       count = count + num;

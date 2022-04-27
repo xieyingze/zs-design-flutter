@@ -41,6 +41,7 @@ dependencies:
 
   # 图表 (ANDROID IOS LINUX MACOS WEB WINDOWS)
   syncfusion_flutter_charts: ^19.3.53
+  syncfusion_flutter_calendar: ^19.4.56
 
   # 分组列表 (ANDROID IOS LINUX MACOS WEB WINDOWS)
   cupertino_listview: ^2.0.0

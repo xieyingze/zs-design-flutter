@@ -6,6 +6,7 @@ import 'package:zs_design_flutter_example/common/section/index.dart';
 import 'package:zs_design_flutter_example/common/utils/alert.dart';
 import 'package:zs_design_flutter_example/common/utils/clipboard.dart';
 import 'package:zs_design_flutter_example/components/button/navbar_button.dart';
+
 import 'controller.dart';
 
 class MBContainerPage extends GetView<MBContainerController> {
@@ -48,7 +49,10 @@ class MBContainerPage extends GetView<MBContainerController> {
         ZSContainer(
           width: double.infinity,
           padding: EdgeInsets.all(16),
-          onTap: () => {Alert.alertTip('已复制代码'), ClipBoardUtils.copyText(text: controller.demo1Desc)},
+          onTap: () => {
+            Alert.alertTip('已复制代码'),
+            ClipBoardUtils.copyText(text: controller.demo1Desc)
+          },
           child: ZSLabel(
             maxLines: 30,
             text: controller.demo1Desc,
@@ -85,7 +89,10 @@ class MBContainerPage extends GetView<MBContainerController> {
         ZSContainer(
           width: double.infinity,
           padding: EdgeInsets.all(16),
-          onTap: () => {Alert.alertTip('已复制代码'), ClipBoardUtils.copyText(text: controller.demo2Desc)},
+          onTap: () => {
+            Alert.alertTip('已复制代码'),
+            ClipBoardUtils.copyText(text: controller.demo2Desc)
+          },
           child: ZSLabel(
             maxLines: 30,
             text: controller.demo2Desc,
@@ -93,7 +100,7 @@ class MBContainerPage extends GetView<MBContainerController> {
             fontSize: fontSize10,
           ),
           color: ZSColors.card(),
-        )
+        ),
       ],
     );
   }
@@ -115,13 +122,21 @@ class MBContainerPage extends GetView<MBContainerController> {
           decoration: BoxDecoration(
             color: ZSColors.card(),
             boxShadow: [
-              BoxShadow(color: ZSColors.shadow(), blurRadius: 5, offset: Offset(0, 2)),
+              BoxShadow(
+                  color: ZSColors.shadow(),
+                  blurRadius: 5,
+                  offset: Offset(0, 2)),
             ],
             borderRadius: BorderRadius.circular(8),
           ),
           onHoverDecoration: BoxDecoration(
             color: ZSColors.card(),
-            boxShadow: [BoxShadow(color: ZSColors.darkShadow(), blurRadius: 10, offset: Offset(1, 5))],
+            boxShadow: [
+              BoxShadow(
+                  color: ZSColors.darkShadow(),
+                  blurRadius: 10,
+                  offset: Offset(1, 5))
+            ],
             borderRadius: BorderRadius.circular(8),
           ),
         ),
@@ -129,7 +144,10 @@ class MBContainerPage extends GetView<MBContainerController> {
         ZSContainer(
           width: double.infinity,
           padding: EdgeInsets.all(16),
-          onTap: () => {Alert.alertTip('已复制代码'), ClipBoardUtils.copyText(text: controller.demo3Desc)},
+          onTap: () => {
+            Alert.alertTip('已复制代码'),
+            ClipBoardUtils.copyText(text: controller.demo3Desc)
+          },
           child: ZSLabel(
             maxLines: 30,
             text: controller.demo3Desc,
@@ -159,12 +177,18 @@ class MBContainerPage extends GetView<MBContainerController> {
           ),
           decoration: BoxDecoration(
             color: ZSColors.card(),
-            gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.topRight, colors: [ZSColors.mainRed(), ZSColors.mainYellow()]),
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.topRight,
+                colors: [ZSColors.mainRed(), ZSColors.mainYellow()]),
             borderRadius: BorderRadius.circular(8),
           ),
           onHoverDecoration: BoxDecoration(
             color: ZSColors.card(),
-            gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomLeft, colors: [ZSColors.mainRed(), ZSColors.mainYellow()]),
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomLeft,
+                colors: [ZSColors.mainRed(), ZSColors.mainYellow()]),
             borderRadius: BorderRadius.circular(8),
           ),
         ),
@@ -172,7 +196,10 @@ class MBContainerPage extends GetView<MBContainerController> {
         ZSContainer(
           width: double.infinity,
           padding: EdgeInsets.all(16),
-          onTap: () => {Alert.alertTip('已复制代码'), ClipBoardUtils.copyText(text: controller.demo4Desc)},
+          onTap: () => {
+            Alert.alertTip('已复制代码'),
+            ClipBoardUtils.copyText(text: controller.demo4Desc)
+          },
           child: ZSLabel(
             maxLines: 30,
             text: controller.demo4Desc,
